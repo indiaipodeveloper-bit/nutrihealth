@@ -4,7 +4,7 @@ import { GiCupcake } from "react-icons/gi";
 
 export default function About() {
   return (
-    <div className="min-h-screen  px-6 py-20 text-center">
+    <div className="min-h-screen md:pt-28 pt-10  px-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

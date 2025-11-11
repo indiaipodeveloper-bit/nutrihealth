@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen px-6 py-20 text-center">
+    <div className="min-h-screen md:pt-28 pt-10 px-6  text-center">
       <motion.h1
         className="text-6xl font-bold text-[#e5ac55] mb-10"
         initial={{ opacity: 0, y: 40 }}
