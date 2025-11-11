@@ -7,6 +7,7 @@ import Header from "./layout/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Products from "./pages/Products";
 
 export default function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
