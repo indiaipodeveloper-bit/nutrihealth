@@ -1,0 +1,10 @@
+/* .socials{
+    transform: rotateZ('0deg');
+    transition: all;
+    
+} */
+
+
+.socials:hover{
+    transform: rotateZ('60deg');
+}
