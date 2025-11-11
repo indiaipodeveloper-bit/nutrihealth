@@ -41,7 +41,7 @@ export default function Home() {
           {[1, 2, 3, 4].map((item) => (
             <motion.div
               key={item}
-              className="rounded-xl p-8 flex items-center gap-6 cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 ] hover:-translate-y-2 transition-all duration-300"
+              className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6 cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 ] hover:-translate-y-2 transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export default function Home() {
               <div className=" w-32 h-32 flex items-center justify-center flex-shrink-0 rounded-lg shadow-sm">
                 <GiCookie className="text-6xl text-[#e76f51]" />
               </div>
-              <div className="flex-1">
+              <div className="flex-1 ">
                 <h4 className="text-2xl font-bold  mb-2">Choco Chip Cookie</h4>
                 <p className=" mb-3">
                   Freshly baked with rich chocolate chunks and love.
