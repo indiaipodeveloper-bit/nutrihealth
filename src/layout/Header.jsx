@@ -42,6 +42,12 @@ const Header = () => {
                 Home
               </Link>
               <Link
+                to={"/products"}
+                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+              >
+                Products
+              </Link>
+              <Link
                 to={"/about"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
@@ -74,6 +80,12 @@ const Header = () => {
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
                 Home
+              </Link>
+              <Link
+                to={"/products"}
+                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+              >
+                Products
               </Link>
               <Link
                 to={"/about"}

@@ -9,10 +9,11 @@
 
 
 export class Animal {
-    constructor(){
-        console.log("this is the contructor and called when the object is created")
+    constructor(animal){
+        this.animal = animal
     }
 
     async eat(){
+        console.log(animal ,"is eating")
     }
 }
