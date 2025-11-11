@@ -7,6 +7,9 @@ import { BiMenuAltLeft } from "react-icons/bi";
 
 const Header = () => {
   const [isSidebar, setisSidebar] = useState(false);
+  const handleSidebarClick = () => {
+    setisSidebar(false);
+  };
   return (
     <>
       <div className="fixed z-10">
@@ -36,24 +39,28 @@ const Header = () => {
             </div>
             <div className="flex flex-col w-full justify-center items-center gap-y-8">
               <Link
+                onClick={handleSidebarClick}
                 to={"/"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
                 Home
               </Link>
               <Link
+                onClick={handleSidebarClick}
                 to={"/products"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
                 Products
               </Link>
               <Link
+                onClick={handleSidebarClick}
                 to={"/about"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
                 About
               </Link>
               <Link
+                onClick={handleSidebarClick}
                 to={"/contact-us"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
