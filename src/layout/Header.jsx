@@ -23,8 +23,8 @@ const Header = () => {
         {/* --------------------sidebar------------------------  */}
         <div
           className={`min-h-screen bg-white border-r border-gray-300 transition-all py-10 duration-500 bg- ${
-            isSidebar ? "translate-x-0" : "-translate-x-[300px]"
-          } z-10 min-w-[300px] md:hidden top-0 left-0 relative`}
+            isSidebar ? "translate-x-0" : "-translate-x-[200px]"
+          } z-10 min-w-[200px] md:hidden top-0 left-0 relative`}
         >
           <button
             onClick={() => setisSidebar(false)}
