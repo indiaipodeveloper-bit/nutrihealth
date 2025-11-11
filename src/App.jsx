@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import "./App.css"
 
 export default function App() {
   useEffect(() => {
