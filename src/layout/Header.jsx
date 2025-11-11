@@ -61,7 +61,7 @@ const Header = () => {
         </div>
 
         {/* ------------------------top bar -------------------------------- */}
-        <div className="fixed px-5 hidden md:block top-0 z-20 bg- w-full bg-white border-2 border-b-gray-200 ">
+        <div className="fixed px-5 hidden md:block top-0 z-20 bg- w-full bg-white  border-b-gray-200 ">
           <div className="max-w-7xl mx-auto flex items-center justify-between transition-all z-50 duration-300">
             <div>
               <img src={padmaz} className="w-[120px]" alt="padmaz logo" />
