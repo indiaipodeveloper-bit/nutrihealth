@@ -7,7 +7,7 @@ import Header from "./layout/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import "./App.css"
+import "./App.css";
 import Products from "./pages/Products";
 
 export default function App() {
@@ -31,7 +31,7 @@ export default function App() {
       <div className="min-h-screen bg-white">
         <Header />
         <Routes>
-          <Route path="/*" element={<Navigate to={"/"}/>} />
+          <Route path="/*" element={<Navigate to={"/"} />} />
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Products />} />
           <Route path="/contact-us" element={<Contact />} />
