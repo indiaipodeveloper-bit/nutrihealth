@@ -2,7 +2,7 @@ import React from 'react'
 
 const Products = () => {
   return (
-    <div>
+    <div className='min-h-screen my-20'>
         products page
     </div>
   )

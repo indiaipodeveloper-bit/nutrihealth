@@ -32,7 +32,7 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/menu" element={<Products />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>

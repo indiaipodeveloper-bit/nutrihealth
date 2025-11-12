@@ -47,10 +47,10 @@ const Header = () => {
               </Link>
               <Link
                 onClick={handleSidebarClick}
-                to={"/products"}
+                to={"/menu"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
-                Products
+                Menu
               </Link>
               <Link
                 onClick={handleSidebarClick}
@@ -66,7 +66,7 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <Link to={"/products"}>
+              <Link to={"/menu"}>
                 <button className="hover:rounded-3xl cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90">
                   Order Now
                 </button>
@@ -89,10 +89,10 @@ const Header = () => {
                 Home
               </Link>
               <Link
-                to={"/products"}
+                to={"/menu"}
                 className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
               >
-                Products
+                Menu
               </Link>
               <Link
                 to={"/about"}
@@ -106,7 +106,7 @@ const Header = () => {
               >
                 Contact
               </Link>
-              <Link to={"/products"}>
+              <Link to={"/menu"}>
                 <button className="hover:rounded-3xl cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90">
                   Order Now
                 </button>
