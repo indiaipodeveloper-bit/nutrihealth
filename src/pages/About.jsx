@@ -32,7 +32,7 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fffaf3] flex flex-col items-center justify-center px-6 py-24">
+    <div className="min-h-screen  flex flex-col items-center justify-center px-6 py-24">
       {/* Title */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}

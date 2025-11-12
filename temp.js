@@ -14,6 +14,18 @@ export class Animal {
     }
 
     async eat(){
-        console.log(animal ,"is eating")
+        console.log(this.animal ,"is eating")
     }
 }
+
+
+class Lion extends Animal{
+    constructor(name){
+        super.eat()
+        this.name = name
+    }
+}
+
+let l = new Lion("shera")
+
+l.eat()

@@ -48,7 +48,7 @@ export default function Products() {
   ];
 
   return (
-    <div className="min-h-screen overflow-hidden bg-[#fffaf3]">
+    <div className="min-h-screen overflow-hidden ">
       <div className="pt-28 text-center px-4">
         <motion.div
           className="text-[#e5ac55] font-bold text-5xl mb-4"
