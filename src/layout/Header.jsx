@@ -107,7 +107,7 @@ const Header = () => {
                 Contact
               </Link>
               <Link to={"/menu"}>
-                <button className="hover:rounded-3xl cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90">
+                <button className="hover:rounded-3xl  hover:cursor-pointer cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90">
                   Order Now
                 </button>
               </Link>
