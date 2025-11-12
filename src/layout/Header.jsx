@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GiCupcake } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import padmaz from "../assets/padmaz.png";
 import { ImCross } from "react-icons/im";
 import { BiMenuAltLeft } from "react-icons/bi";
@@ -38,38 +38,55 @@ const Header = () => {
               <img src={padmaz} className="w-[150px]" alt="padmaz logo" />
             </div>
             <div className="flex flex-col w-full justify-center items-center gap-y-8">
-              <Link
+              <NavLink
                 onClick={handleSidebarClick}
                 to={"/"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={handleSidebarClick}
                 to={"/menu"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 Menu
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={handleSidebarClick}
                 to={"/about"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 About
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 onClick={handleSidebarClick}
                 to={"/contact-us"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 Contact
-              </Link>
-              <Link to={"/menu"}>
-                <button className="hover:rounded-3xl cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90">
-                  Order Now
-                </button>
+              </NavLink>
+              <Link
+                to={"/menu"}
+                className="hover:rounded-3xl cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90"
+              >
+                Order Now
               </Link>
             </div>
           </div>
@@ -82,34 +99,52 @@ const Header = () => {
               <img src={padmaz} className="w-[100px]" alt="padmaz logo" />
             </div>
             <nav className="flex items-center gap-8">
-              <Link
+              <NavLink
                 to={"/"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to={"/menu"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bg-red-500 before:bottom-0 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 Menu
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to={"/about"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 About
-              </Link>
-              <Link
+              </NavLink>
+
+              <NavLink
                 to={"/contact-us"}
-                className="p-1 relative before:content-[''] before:absolute before:h-0.5 before:w-0 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 hover:before:w-full font-semibold  transition"
+                className={({ isActive }) =>
+                  `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
+                    isActive ? "before:w-full " : "before:w-0"
+                  }`
+                }
               >
                 Contact
-              </Link>
-              <Link to={"/menu"}>
-                <button className="hover:rounded-3xl  hover:cursor-pointer cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90">
-                  Order Now
-                </button>
+              </NavLink>
+              <Link
+                to={"/menu"}
+                className="hover:rounded-3xl hover:cursor-pointer cursor-pointer bg-[#bf2a28] rounded-lg transition-all duration-300 text-white px-6 py-3 font-bold hover:opacity-90"
+              >
+                Order Now
               </Link>
             </nav>
           </div>
