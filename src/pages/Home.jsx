@@ -62,7 +62,7 @@ export default function Home() {
           </h2>
           <p className="text-xl font-bold mb-8">Freshly baked every morning</p>
           <Link
-            to={"/products"}
+            to={"/menu"}
             className="inline-block bg-[#bf2a28] rounded-xl hover:rounded-3xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
           >
             View Menu
