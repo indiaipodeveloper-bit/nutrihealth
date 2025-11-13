@@ -88,7 +88,6 @@ export default function Home() {
 
   return (
     <div className="p-10">
-      {/* Hero Section */}
       <div className="md:pt-2 px-4 text-center">
         <motion.div
           initial={{ y: 60 }}
@@ -131,7 +130,7 @@ export default function Home() {
           {products.map((item) => (
             <motion.div
               key={item.des}
-              className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6 cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
+              className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6  shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               initial={{ y: 40 }}
               whileInView={{ y: 0 }}
@@ -151,7 +150,7 @@ export default function Home() {
                 <p className="mb-3">{item.des}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold ">30.99 Rs </span>
-                  <button className="text-white bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
+                  <button className="text-white  bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
                     Order
                   </button>
                 </div>
@@ -193,7 +192,7 @@ export default function Home() {
               <p className="text-2xl font-bold mb-2">{item.title}</p>
               <p className="text-gray-700 mb-6 grow">{item.des}</p>
 
-              <button className="mt-auto w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
+              <button className="mt-auto w-full cursor-pointer bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
                 Order Now
               </button>
             </motion.div>
@@ -231,7 +230,7 @@ export default function Home() {
               />
               <p className="text-2xl font-bold mb-2">{item.title}</p>
               <p className="text-gray-700 mb-6">{item.des}</p>
-              <button className="w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
+              <button className="w-full cursor-pointer bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
                 Order Now
               </button>
             </motion.div>
