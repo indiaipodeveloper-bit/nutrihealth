@@ -150,7 +150,7 @@ export default function Home() {
                 <p className="text-2xl font-bold mb-2">{item.title}</p>
                 <p className="mb-3">{item.des}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-bold ">$3.99</span>
+                  <span className="text-3xl font-bold ">30.99 Rs </span>
                   <button className="text-white bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
                     Order
                   </button>

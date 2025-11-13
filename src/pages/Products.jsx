@@ -7,43 +7,43 @@ export default function Products() {
       title: "Cheesy Chips",
       des: "Crispy potato chips coated with tangy cheese flavor.",
       img: "https://images.pexels.com/photos/12345/cheesy-chips.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", // replace with real Pexels URL
-      price: "$1.99",
+      price: "1.99 Rs",
     },
     {
       title: "Chocolate Donut",
       des: "Soft ring donut dipped in rich chocolate glaze.",
       img: "https://images.pexels.com/photos/23456/chocolate-donut.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      price: "$2.49",
+      price: "20.49  Rs",
     },
     {
       title: "Blueberry Muffin",
       des: "Moist muffin packed with real blueberries and vanilla aroma.",
       img: "https://images.pexels.com/photos/34567/blueberry-muffin.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      price: "$2.99",
+      price: "20.99  Rs",
     },
     {
       title: "Strawberry Pastry",
       des: "Fluffy sponge pastry layered with strawberry cream.",
       img: "https://images.pexels.com/photos/45678/strawberry-pastry.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      price: "$3.49",
+      price: "30.49  Rs",
     },
     {
       title: "Mini Pizza",
       des: "Bite-sized pizzas with melted cheese and herbs.",
       img: "https://images.pexels.com/photos/56789/mini-pizza.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      price: "$4.29",
+      price: "40.29  Rs",
     },
     {
       title: "Grilled Sandwich",
       des: "Golden grilled sandwich stuffed with veggies and cheese.",
       img: "https://images.pexels.com/photos/67890/grilled-sandwich.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      price: "$3.79",
+      price: "30.79  Rs",
     },
     {
       title: "Choco Chip Cookies",
       des: "Crispy cookies loaded with chocolate chips.",
       img: "https://images.pexels.com/photos/78901/choco-chip-cookies.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      price: "$2.59",
+      price: "20.59  Rs",
     },
   ];
 
