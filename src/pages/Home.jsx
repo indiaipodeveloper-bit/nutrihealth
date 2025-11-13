@@ -91,8 +91,8 @@ export default function Home() {
       {/* Hero Section */}
       <div className="md:pt-2 px-4 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{  y: 60 }}
+          animate={{  y: 0 }}
           transition={{ duration: 1 }}
           className="flex justify-center  items-center flex-col"
         >
@@ -119,8 +119,8 @@ export default function Home() {
       <div id="menu" className="py-28 px-4">
         <motion.p
           className="lg:text-5xl md:text-5xl text-3xl font-bold mb-12 text-center"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{  y: 40 }}
+          whileInView={{  y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
@@ -133,8 +133,8 @@ export default function Home() {
               key={item.des}
               className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6 cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
               whileHover={{ scale: 1.02 }}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{  y: 40 }}
+              whileInView={{  y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
@@ -166,8 +166,8 @@ export default function Home() {
       <div className="py-20 px-4">
         <motion.p
           className="text-5xl font-bold mb-12 text-center text-[#e5ac55]"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{  y: 40 }}
+          whileInView={{  y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
@@ -180,8 +180,8 @@ export default function Home() {
               key={item.title}
               className="rounded-xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300 h-full min-h-[420px]"
               whileHover={{ scale: 1.03 }}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 40 }}
+              whileInView={{  y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
@@ -205,8 +205,8 @@ export default function Home() {
       <div className="py-20 px-4">
         <motion.p
           className="text-5xl font-bold mb-12 text-center text-[#e5ac55]"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{  y: 40 }}
+          whileInView={{  y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
@@ -219,8 +219,8 @@ export default function Home() {
               key={item.title}
               className="rounded-xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
               whileHover={{ scale: 1.03 }}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{  y: 40 }}
+              whileInView={{  y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >

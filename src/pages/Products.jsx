@@ -52,16 +52,16 @@ export default function Products() {
       <div className="pt-28 text-center px-4">
         <motion.div
           className="text-[#e5ac55] font-bold text-5xl mb-4"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 40 }}
+          animate={{ y: 0 }}
           transition={{ duration: 0.8 }}
         >
           Our Delicious Snacks
         </motion.div>
         <motion.p
           className="text-gray-700 text-lg font-semibold"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ y: 40 }}
+          animate={{ y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
           From savory bites to sweet treats — all in one place.
@@ -75,8 +75,8 @@ export default function Products() {
               key={item.title}
               className="rounded-xl p-8 flex flex-col items-center justify-between cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300 bg-white"
               whileHover={{ scale: 1.02 }}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ y: 40 }}
+              whileInView={{ y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
             >
