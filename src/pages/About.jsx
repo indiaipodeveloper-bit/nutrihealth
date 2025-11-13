@@ -41,7 +41,7 @@ export default function About() {
         className="text-center max-w-3xl"
       >
         <p className="text-gray-700 font-semibold text-lg">
-          Padma Nutri Health Products Pvt. Ltd. - Manufacturer of rusk toast, breads & bakery biscuits since 2014 in Raiganj, West Bengal.
+          Padma Nutri Health Products Pvt. Ltd. - Manufacturer of rusk toast, breads and bakery biscuits since 2014 in Raiganj, West Bengal.
         </p>
       </motion.div>
 
