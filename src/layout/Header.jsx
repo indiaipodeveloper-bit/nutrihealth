@@ -103,8 +103,10 @@ const Header = () => {
             <NavLink
               to={"/"}
               className={({ isActive }) =>
-                `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
-                  isActive ? "before:w-full " : "before:w-0"
+                `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0  hover:before:w-full ${
+                  !isActive && "hover:before:bg-gray-300"
+                } before:transition-all duration-300 font-semibold transition ${
+                  isActive ? "before:w-full before:bg-red-500" : "before:w-0"
                 }`
               }
             >
@@ -113,8 +115,10 @@ const Header = () => {
             <NavLink
               to={"/menu"}
               className={({ isActive }) =>
-                `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
-                  isActive ? "before:w-full " : "before:w-0"
+                `p-1 relative hover:before:w-full ${
+                  !isActive && "hover:before:bg-gray-300"
+                } before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:transition-all duration-300 font-semibold transition ${
+                  isActive ? "before:w-full before:bg-red-500" : "before:w-0"
                 }`
               }
             >
@@ -123,8 +127,10 @@ const Header = () => {
             <NavLink
               to={"/about"}
               className={({ isActive }) =>
-                `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
-                  isActive ? "before:w-full " : "before:w-0"
+                `p-1 relative hover:before:w-full ${
+                  !isActive && "hover:before:bg-gray-300"
+                } before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:transition-all duration-300 font-semibold transition ${
+                  isActive ? "before:w-full before:bg-red-500" : "before:w-0"
                 }`
               }
             >
@@ -134,8 +140,10 @@ const Header = () => {
             <NavLink
               to={"/contact-us"}
               className={({ isActive }) =>
-                `p-1 relative before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0 before:bg-red-500 before:transition-all duration-300 font-semibold transition ${
-                  isActive ? "before:w-full " : "before:w-0"
+                `p-1 relative hover:before:w-full ${
+                  !isActive && "hover:before:bg-gray-300"
+                } before:content-[''] before:absolute before:h-0.5 before:left-0 before:bottom-0  before:transition-all duration-300 font-semibold transition ${
+                  isActive ? "before:w-full before:bg-red-500" : "before:w-0"
                 }`
               }
             >

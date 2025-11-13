@@ -1,5 +1,4 @@
 import React from "react";
-import { GiCupcake, GiCroissant, GiCookie } from "react-icons/gi";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import rusk from "../assets/rusk.png";
@@ -14,7 +13,7 @@ import breadlogo from "../assets/breadLogo.png";
 export default function Home() {
   let products = [
     {
-      title: "rusk",
+      title: "Rusk",
       des: "Spicy Little Finger Toast",
       img: rusk,
     },
@@ -30,7 +29,7 @@ export default function Home() {
     },
     {
       title: "Cakes",
-      des: "Butter Cake Choco Cake Cookies",
+      des: "Butter Cake, Choco Cake, Cookies",
       img: cake,
     },
     {
@@ -40,7 +39,7 @@ export default function Home() {
     },
     {
       title: "Sweets",
-      des: " Doodh Malai Toast Corn Bite",
+      des: "Doodh Malai Toast, Corn Bite",
       img: sweets,
     },
     {
@@ -50,27 +49,66 @@ export default function Home() {
     },
   ];
 
+  // Random snack data for new sections
+  const morningSnacks = [
+    {
+      title: "Butter Toast",
+      des: "Crispy buttered toast perfect for mornings",
+      img: rusk,
+    },
+    {
+      title: "Fruit Bread",
+      des: "Soft, sweet bread loaded with dry fruits",
+      img: bread,
+    },
+    {
+      title: "Tea Biscuits",
+      des: "Light and crunchy biscuits for tea time",
+      img: biscuits,
+    },
+  ];
+
+  const eveningSnacks = [
+    {
+      title: "Chocolate Cake Slice",
+      des: "Rich and moist chocolate delight",
+      img: cake,
+    },
+    {
+      title: "Mini Cup Cakes",
+      des: "Soft and fluffy bite-size cupcakes",
+      img: cupcakes,
+    },
+    {
+      title: "Masala Namkeen Mix",
+      des: "Crunchy, spicy evening snack mix",
+      img: namkeen,
+    },
+  ];
+
   return (
-    <div className=" ">
-      <div className="md:pt-2 px-4  text-center">
+    <div className="p-10">
+      {/* Hero Section */}
+      <div className="md:pt-2 px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="flex justify-center items-center flex-col"
         >
-          <img
-            src={breadlogo}
-            alt=""
-            className=" min-w-[200px] aspect-square animateUpDown"
-          />
-          <div className="my-10">
-            <p className="lg:text-6xl md:text-4xl transition-all duration-300 text-3xl text-[#e5ac55] font-bold mb-10">
-              Quality Is Our Priority
-            </p>
+          <p className="lg:text-6xl md:text-5xl transition-all duration-300 text-4xl text-[#e5ac55] font-bold my-5">
+            Quality Is Our Priority
+          </p>
+
+          <div className="mb-10 w-full flex flex-col justify-center items-center gap-2.5 gap-y-5">
+            <img
+              src={breadlogo}
+              alt=""
+              className="min-w-[200px] aspect-square animateUpDown"
+            />
             <Link
               to={"/menu"}
-              className=" bg-[#bf2a28] rounded-xl hover:rounded-3xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
+              className="bg-[#bf2a28] rounded-xl w-[30%] my-5 hover:rounded-4xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
             >
               View Menu
             </Link>
@@ -78,6 +116,7 @@ export default function Home() {
         </motion.div>
       </div>
 
+      {/* --- TODAY’S SPECIAL (Unchanged) --- */}
       <div id="menu" className="py-28 px-4">
         <motion.p
           className="text-5xl font-bold mb-12 text-center"
@@ -113,11 +152,87 @@ export default function Home() {
                 <p className="mb-3">{item.des}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold ">$3.99</span>
-                  <button className=" text-white bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
+                  <button className="text-white bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
                     Order
                   </button>
                 </div>
               </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* --- MORNING SPECIALS --- */}
+      <div className="py-20 px-4">
+        <motion.p
+          className="text-5xl font-bold mb-12 text-center text-[#e5ac55]"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Morning Specials
+        </motion.p>
+
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          {morningSnacks.map((item) => (
+            <motion.div
+              key={item.title}
+              className="rounded-xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
+              whileHover={{ scale: 1.03 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-40 h-40 object-contain mb-4"
+              />
+              <p className="text-2xl font-bold mb-2">{item.title}</p>
+              <p className="text-gray-700 mb-6">{item.des}</p>
+              <button className="w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
+                Order Now
+              </button>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* --- EVENING SPECIALS --- */}
+      <div className="py-20 px-4">
+        <motion.p
+          className="text-5xl font-bold mb-12 text-center text-[#e5ac55]"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          Evening Specials
+        </motion.p>
+
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          {eveningSnacks.map((item) => (
+            <motion.div
+              key={item.title}
+              className="rounded-xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
+              whileHover={{ scale: 1.03 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-40 h-40 object-contain mb-4"
+              />
+              <p className="text-2xl font-bold mb-2">{item.title}</p>
+              <p className="text-gray-700 mb-6">{item.des}</p>
+              <button className="w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
+                Order Now
+              </button>
             </motion.div>
           ))}
         </div>
