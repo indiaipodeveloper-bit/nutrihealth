@@ -191,7 +191,7 @@ export default function Home() {
                 className="w-40 h-40 object-contain mb-4"
               />
               <p className="text-2xl font-bold mb-2">{item.title}</p>
-              <p className="text-gray-700 mb-6 flex-grow">{item.des}</p>
+              <p className="text-gray-700 mb-6 grow">{item.des}</p>
 
               <button className="mt-auto w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
                 Order Now

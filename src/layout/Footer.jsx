@@ -22,21 +22,21 @@ export default function Footer() {
           <Link
             onClick={() => alert("clicked")}
             to="/"
-            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-[360deg]  duration-500"
+            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-360  duration-500"
           >
             <FaInstagram className="socials" />
           </Link>
           <Link
             onClick={() => alert("clicked")}
             to="/"
-            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-[360deg] duration-500"
+            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-360 duration-500"
           >
             <FaFacebookF className="socials" />
           </Link>
           <Link
             onClick={() => alert("clicked")}
             to="/"
-            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-[360deg] duration-500"
+            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-360 duration-500"
           >
             <FaTwitter className="socials " />
           </Link>
