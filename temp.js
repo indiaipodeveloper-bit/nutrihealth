@@ -13,19 +13,12 @@ export class Animal {
         this.animal = animal
     }
 
-    async eat(){
+    eat(){
         console.log(this.animal ,"is eating")
     }
 }
 
 
-class Lion extends Animal{
-    constructor(name){
-        super.eat()
-        this.name = name
-    }
-}
 
-let l = new Lion("shera")
-
-l.eat()
+let f = new Animal("lion")
+f.eat()

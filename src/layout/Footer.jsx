@@ -18,22 +18,25 @@ export default function Footer() {
           Follow us for sweet updates, new treats, and special offers!
         </p>
 
-        <div className=" socials text-3xl justify-center gap-6 flex items-center mb-8">
+        <div className=" socials text-3xl z-50 justify-center gap-6 flex items-center mb-8">
           <Link
+            onClick={() => alert("clicked")}
             to="/"
-            className="transition-all hover:rotate-[360deg] duration-500"
+            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-[360deg]  duration-500"
           >
             <FaInstagram className="socials" />
           </Link>
           <Link
+            onClick={() => alert("clicked")}
             to="/"
-            className="transition-all hover:rotate-[360deg] duration-500"
+            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-[360deg] duration-500"
           >
             <FaFacebookF className="socials" />
           </Link>
           <Link
+            onClick={() => alert("clicked")}
             to="/"
-            className="transition-all hover:rotate-[360deg] duration-500"
+            className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-[360deg] duration-500"
           >
             <FaTwitter className="socials " />
           </Link>

@@ -9,6 +9,7 @@ import cake from "../assets/cake.png";
 import cupcakes from "../assets/cupcakes.png";
 import sweets from "../assets/sweets.png";
 import namkeen from "../assets/namkeen.png";
+import breadlogo from "../assets/breadLogo.png";
 
 export default function Home() {
   let products = [
@@ -48,48 +49,55 @@ export default function Home() {
       img: namkeen,
     },
   ];
+
   return (
-    <div className="min-h-screen overflow-hidden">
-      <section className="md:pt-28 pt-10 px-4 text-center">
+    <div className=" ">
+      <div className="md:pt-2 px-4  text-center">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
+          className="flex justify-center items-center flex-col"
         >
-          <GiCroissant className="text-9xl  mx-auto mb-6" />
-          <h2 className="text-7xl text-[#e5ac55] font-bold  mb-4">
-            Taste the Joy
-          </h2>
-          <p className="text-xl font-bold mb-8">Freshly baked every morning</p>
-          <Link
-            to={"/menu"}
-            className="inline-block bg-[#bf2a28] rounded-xl hover:rounded-3xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
-          >
-            View Menu
-          </Link>
+          <img
+            src={breadlogo}
+            alt=""
+            className=" min-w-[200px] aspect-square animateUpDown"
+          />
+          <div className="my-10">
+            <p className="lg:text-6xl md:text-4xl transition-all duration-300 text-3xl text-[#e5ac55] font-bold mb-10">
+              Quality Is Our Priority
+            </p>
+            <Link
+              to={"/menu"}
+              className=" bg-[#bf2a28] rounded-xl hover:rounded-3xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
+            >
+              View Menu
+            </Link>
+          </div>
         </motion.div>
-      </section>
+      </div>
 
-      <section id="menu" className=" py-28 px-4">
-        <motion.h3
-          className="text-5xl font-bold  mb-12 text-center"
+      <div id="menu" className="py-28 px-4">
+        <motion.p
+          className="text-5xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           Today’s Special
-        </motion.h3>
+        </motion.p>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {products.map((item) => (
             <motion.div
               key={item.des}
-              className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6 cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 ] hover:-translate-y-2 transition-all duration-300"
+              className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6 cursor-pointer shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: item * 0.1 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
               <div className="md:w-36 md:h-36 flex items-center justify-center shrink-0 rounded-lg shadow-sm">
@@ -99,9 +107,10 @@ export default function Home() {
                   alt=""
                 />
               </div>
-              <div className="flex-1 ">
-                <h4 className="text-2xl font-bold  mb-2">{item.title}</h4>
-                <p className=" mb-3">{item.des}</p>
+
+              <div className="flex-1">
+                <p className="text-2xl font-bold mb-2">{item.title}</p>
+                <p className="mb-3">{item.des}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-3xl font-bold ">$3.99</span>
                   <button className=" text-white bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
@@ -112,7 +121,7 @@ export default function Home() {
             </motion.div>
           ))}
         </div>
-      </section>
+      </div>
     </div>
   );
 }

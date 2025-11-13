@@ -10,7 +10,7 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Contact Us
+        Let's Get In Touch
       </motion.h1>
 
       <motion.p

@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import BiteBliss from "./pages/Home";
 import Footer from "./layout/Footer";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./layout/Header";
@@ -13,7 +12,7 @@ import Products from "./pages/Products";
 export default function App() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 3,
+      duration: 2,
       smooth: true,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
@@ -28,8 +27,8 @@ export default function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-white">
         <Header />
+      <div className="min-h-screen">
         <Routes>
           <Route path="/*" element={<Navigate to={"/"} />} />
           <Route path="/" element={<Home />} />
@@ -37,8 +36,8 @@ export default function App() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <Footer />
       </div>
+        <Footer />
     </>
   );
 }
