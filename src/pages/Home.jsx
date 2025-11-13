@@ -94,13 +94,13 @@ export default function Home() {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="flex justify-center items-center flex-col"
+          className="flex justify-center  items-center flex-col"
         >
           <p className="lg:text-6xl md:text-5xl transition-all duration-300 text-4xl text-[#e5ac55] font-bold my-5">
             Quality Is Our Priority
           </p>
 
-          <div className="mb-10 w-full flex flex-col justify-center items-center gap-2.5 gap-y-5">
+          <div className="w-full flex flex-col justify-center items-center gap-2.5 gap-y-5">
             <img
               src={breadlogo}
               alt=""
@@ -108,7 +108,7 @@ export default function Home() {
             />
             <Link
               to={"/menu"}
-              className="bg-[#bf2a28] rounded-xl w-[30%] my-5 hover:rounded-4xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
+              className="bg-[#bf2a28] rounded-xl w-full md:w-auto mt-5 hover:rounded-4xl transition-all duration-300 text-white px-10 py-4 text-xl font-bold hover:opacity-90 cursor-pointer"
             >
               View Menu
             </Link>
@@ -116,10 +116,9 @@ export default function Home() {
         </motion.div>
       </div>
 
-      {/* --- TODAY’S SPECIAL (Unchanged) --- */}
       <div id="menu" className="py-28 px-4">
         <motion.p
-          className="text-5xl font-bold mb-12 text-center"
+          className="lg:text-5xl md:text-5xl text-3xl font-bold mb-12 text-center"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -163,6 +162,7 @@ export default function Home() {
       </div>
 
       {/* --- MORNING SPECIALS --- */}
+
       <div className="py-20 px-4">
         <motion.p
           className="text-5xl font-bold mb-12 text-center text-[#e5ac55]"
@@ -178,7 +178,7 @@ export default function Home() {
           {morningSnacks.map((item) => (
             <motion.div
               key={item.title}
-              className="rounded-xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
+              className="rounded-xl p-6 flex flex-col items-center text-center shadow-md hover:shadow-xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300 h-full min-h-[420px]"
               whileHover={{ scale: 1.03 }}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -191,8 +191,9 @@ export default function Home() {
                 className="w-40 h-40 object-contain mb-4"
               />
               <p className="text-2xl font-bold mb-2">{item.title}</p>
-              <p className="text-gray-700 mb-6">{item.des}</p>
-              <button className="w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
+              <p className="text-gray-700 mb-6 flex-grow">{item.des}</p>
+
+              <button className="mt-auto w-full bg-[#bf2a28] hover:bg-[#e5ac55] text-white font-bold py-3 rounded-md transition-all duration-300">
                 Order Now
               </button>
             </motion.div>
