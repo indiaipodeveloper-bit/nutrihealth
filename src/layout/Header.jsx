@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { GiCupcake } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import padmaz from "../assets/padmaz.png";
 import { ImCross } from "react-icons/im";
@@ -12,6 +13,13 @@ const Header = () => {
   return (
     <>
       <div className="z-10 fixed w-0 top-0">
+        <button
+          onClick={() => setisSidebar(true)}
+          className="fixed cursor-pointer z-10 left-5 top-5"
+        >
+          <BiMenuAltLeft className="text-4xl font-bold" />
+        </button>
+
         {/* --------------------sidebar------------------------  */}
         <div
           className={`min-h-screen sm:hidden border-r bg-white border-gray-300 transition-all py-10 duration-500 bg- ${
@@ -86,14 +94,8 @@ const Header = () => {
       </div>
 
       {/* ------------------------top bar -------------------------------- */}
-      <div className="sticky px-5 sm:bg-white bg-[#bf2a28] py-2.5 top-0 z-20 bg- w-full border-b border-b-gray-200 ">
-        <button
-          onClick={() => setisSidebar(true)}
-          className="cursor-pointer sm:hidden text-white z-10 left-5 top-5"
-        >
-          <BiMenuAltLeft className="text-4xl font-bold" />
-        </button>
-        <div className="max-w-7xl hidden sm:flex text-md md:text-lg lg:text-xl mx-auto h-[70px] overflow-hidden  items-center justify-between transition-all z-50 duration-300">
+      <div className="sticky px-5 hidden sm:block py-2.5 top-0 z-20 bg- w-full bg-white border-b border-b-gray-200 ">
+        <div className="max-w-7xl text-md md:text-lg lg:text-xl mx-auto h-[70px] overflow-hidden flex items-center justify-between transition-all z-50 duration-300">
           <div>
             <img src={padmaz} className="w-[100px]" alt="padmaz logo" />
           </div>
