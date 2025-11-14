@@ -130,14 +130,14 @@ export default function Home() {
           {products.map((item) => (
             <motion.div
               key={item.des}
-              className="rounded-xl p-8 flex-wrap justify-center items-center flex gap-6  shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
+              className="rounded-xl p-8 overflow-hidden flex-wrap justify-center items-center flex gap-6  shadow-md hover:shadow-2xl border border-[#8b4513]/10 hover:-translate-y-2 transition-all duration-300"
               whileHover={{ scale: 1.02 }}
               initial={{ y: 40 }}
               whileInView={{ y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="md:w-36 md:h-36 flex items-center justify-center shrink-0 rounded-lg shadow-sm">
+              <div className="md:w-36 md:h-36  flex items-center justify-center shrink-0 rounded-lg shadow-sm">
                 <img
                   src={item.img}
                   className="w-full max-w-[300px] aspect-square"
@@ -149,7 +149,7 @@ export default function Home() {
                 <p className="text-2xl font-bold mb-2">{item.title}</p>
                 <p className="mb-3">{item.des}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-bold ">30.99 Rs </span>
+                  <span className="text-lg xl:text-2xl font-bold ">30.99 Rs </span>
                   <button className="text-white  bg-[#bf2a28] hover:bg-[#e5ac55] px-6 py-2 font-bold rounded-sm transition cursor-pointer">
                     Order
                   </button>

@@ -63,7 +63,9 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <p className="text-lg font-semibold">📍 123 Bliss Street, Pastry Town</p>
+        <p className="text-lg font-semibold">
+          📍 123 Bliss Street, Pastry Town
+        </p>
         <p className="text-lg font-semibold">📞 +91 98765 43210</p>
         <p className="text-lg font-semibold">✉️ hello@bitebliss.com</p>
       </motion.div>
