@@ -20,21 +20,18 @@ export default function Footer() {
 
         <div className=" socials text-3xl z-50 justify-center gap-6 flex items-center mb-8">
           <Link
-            onClick={() => alert("clicked")}
             to="/"
             className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-360  duration-500"
           >
             <FaInstagram className="socials" />
           </Link>
           <Link
-            onClick={() => alert("clicked")}
             to="/"
             className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-360 duration-500"
           >
             <FaFacebookF className="socials" />
           </Link>
           <Link
-            onClick={() => alert("clicked")}
             to="/"
             className="transition-all  p-2 hover:bg-[#e5ac55] rounded-full cursor-pointer hover:rotate-360 duration-500"
           >

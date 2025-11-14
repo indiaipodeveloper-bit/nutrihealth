@@ -87,13 +87,13 @@ export default function Home() {
   ];
 
   return (
-    <div className="p-10">
-      <div className="md:pt-2 px-4 text-center">
+    <div className="p-10 ">
+      <div className="md:pt-2 px-4  text-center">
         <motion.div
           initial={{ y: 60 }}
           animate={{ y: 0 }}
           transition={{ duration: 1 }}
-          className="flex justify-center  items-center flex-col"
+          className="flex justify-center items-center flex-col"
         >
           <p className="lg:text-6xl md:text-5xl transition-all duration-300 text-4xl text-[#e5ac55] font-bold my-5">
             Quality Is Our Priority
